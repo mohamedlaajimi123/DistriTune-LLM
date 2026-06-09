@@ -1,0 +1,23 @@
+# --- Safety Shield (CRITICAL) ---
+.env
+*.secret
+
+# --- Python Virtual Environments ---
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# --- Massive Datasets & AI Model Weights ---
+# We block these because GitHub will crash if you try to push a multi-gigabyte model
+data/
+*.pt
+*.pth
+*.bin
+checkpoint-*/
+wandb/
+
+# --- System / Code Editor Trash ---
+.DS_Store
+.vscode/
+.idea/
